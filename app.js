@@ -645,9 +645,10 @@ const FuelTrackerApp = (() => {
             const kml = deltaKm / totalLiters;
             if (kml < KML_MIN || kml > KML_MAX) continue;
 
-            if (curr.valorA > 0 && curr.valorG === 0) {
+            // Atribui o consumo ao combustível do registro ANTERIOR (prev)
+            if (prev.valorA > 0 && prev.valorG === 0) {
                 kmlsA.push(kml);
-            } else if (curr.valorG > 0 && curr.valorA === 0) {
+            } else if (prev.valorG > 0 && prev.valorA === 0) {
                 kmlsG.push(kml);
             }
         }
@@ -777,11 +778,12 @@ const FuelTrackerApp = (() => {
             if (currentKmlCriterion === 'range' && (kml < KML_MIN || kml > KML_MAX)) continue;
             if (currentKmlCriterion === 'both' && (!curr.fullTank || kml < KML_MIN || kml > KML_MAX)) continue;
 
-            if (curr.valorA > 0 && curr.valorG === 0) {
+            // ATRIBUIÇÃO CORRIGIDA: Usa prev (combustível queimado do tanque anterior) em vez de curr
+            if (prev.valorA > 0 && prev.valorG === 0) {
                 alcoholKmls.push(kml);
-            } else if (curr.valorG > 0 && curr.valorA === 0) {
+            } else if (prev.valorG > 0 && prev.valorA === 0) {
                 gasKmls.push(kml);
-            } else if (curr.valorA > 0 && curr.valorG > 0) {
+            } else if (prev.valorA > 0 && prev.valorG > 0) {
                 mixedKmls.push(kml);
             }
         }
