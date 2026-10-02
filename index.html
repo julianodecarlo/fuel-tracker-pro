@@ -594,92 +594,61 @@
         </div>
 
         <div class="flex-1 overflow-y-auto space-y-4 text-xs text-stone-600 dark:text-slate-300 pr-1 leading-relaxed">
-            <p class="text-stone-500 dark:text-slate-400">
-                O <strong>Fuel Tracker</strong> não é apenas uma caderneta digital: é o assistente inteligente do seu veículo. Veja abaixo como usar cada recurso para economizar dinheiro, monitorar a eficiência do combustível e prevenir gastos pesados com manutenção.
-            </p>
-            
-            <section aria-label="1. Decisão no Posto" class="space-y-1.5">
-                <h4 class="font-bold text-orange-600 dark:text-orange-400 text-xs uppercase tracking-wider flex items-center gap-1.5">
-                    <i class="fa-solid fa-calculator" aria-hidden="true"></i> 1. Decisão no Posto (Etanol vs. Gasolina)
-                </h4>
-                <p><strong>Para que serve:</strong> Descobrir instantaneamente qual combustível dará mais autonomia pelo menor preço no momento do abastecimento.</p>
-                <ul class="list-disc list-inside space-y-1 pl-1 text-stone-600 dark:text-slate-300">
-                    <li><strong>Como usar:</strong> Antes de abastecer, abra o app e digite os preços por litro do Etanol e da Gasolina no painel da aba Resumo. O app dirá exatamente qual escolher e o valor limite onde o etanol deixa de valer a pena.</li>
-                    <li><strong>Como aproveitar melhor:</strong> Inicialmente, o app usa o cálculo padrão (70%). À medida que você abastece com tanque cheio, ele aprende o consumo **real** do seu motor e ajusta o "Fator" de forma personalizada. Quanto mais você usa, mais precisa fica a recomendação!</li>
-                </ul>
-            </section>
+        <p class="text-stone-500 dark:text-slate-400">
+          O <strong>Fuel Tracker PRO</strong> é a solução completa para gestão de abastecimentos, autonomia real (km/L), comparativo de combustível e controle de manutenções preventivas do seu veículo.
+        </p>
 
-            <section aria-label="2. Aba Resumo (Dashboard)" class="space-y-1.5">
-                <h4 class="font-bold text-orange-600 dark:text-orange-400 text-xs uppercase tracking-wider flex items-center gap-1.5">
-                    <i class="fa-solid fa-chart-pie" aria-hidden="true"></i> 2. Aba Resumo: Indicadores e Novo Cadastro
-                </h4>
-                <p><strong>Para que serve:</strong> Acompanhar seus custos gerais e registrar cada parada no posto sem complicações.</p>
-                <ul class="list-disc list-inside space-y-1 pl-1 text-stone-600 dark:text-slate-300">
-                    <li><strong>KPIs (Quilometragem e Gasto Total):</strong> Use para saber exatamente quanto o seu carro custa por quilômetro rodado (R$/km) e planejar orçamentos de viagens ou custos mensais de rodagem.</li>
-                    <li><strong>Médias de Consumo (km/L):</strong> Compara o rendimento em km/L entre Etanol, Gasolina e Misto. Alternar para a opção <em>"Últimos 5 Abastecimentos"</em> é ideal para testar se uma troca de posto, combustível de marca diferente ou calibragem de pneus melhorou o rendimento recente.</li>
-                    <li><strong>Filtros de Qualidade (Tanque Cheio / Faixa):</strong> Mantenha em "Ambos" para ignorar dados discrepantes ou abastecimentos parciais que distorceriam sua média real.</li>
-                    <li><strong>Formulário de Cadastro:</strong> Preencha a data, o odômetro atual (km do painel) e os valores gastos. Marque sempre <strong>"Tanque Cheio?"</strong> quando encher o tanque para garantir cálculos perfeita de consumo.</li>
-                </ul>
-            </section>
+        <section aria-label="1. Funcionalidades Principais" class="space-y-1.5">
+          <h4 class="font-bold text-orange-600 dark:text-orange-400 text-xs uppercase tracking-wider flex items-center gap-1.5">
+            <i class="fa-solid fa-gas-pump" aria-hidden="true"></i> 1. Registro de Abastecimento
+          </h4>
+          <ul class="list-disc list-inside space-y-1 pl-1">
+            <li><strong>Odômetro (km):</strong> Informe a quilometragem atual do veículo no momento da compra.</li>
+            <li><strong>Valores e Preços:</strong> Insira o valor total e o preço por litro (Etanol, Gasolina ou ambos em caso de abastecimento misto).</li>
+            <li><strong>Tanque Cheio:</strong> Marque esta opção para calcular a média de consumo exata (km/L) entre abastecimentos completos consecutivos.</li>
+          </ul>
+        </section>
 
-            <section aria-label="3. Aba Histórico" class="space-y-1.5">
-                <h4 class="font-bold text-orange-600 dark:text-orange-400 text-xs uppercase tracking-wider flex items-center gap-1.5">
-                    <i class="fa-solid fa-list-ul" aria-hidden="true"></i> 3. Aba Histórico
-                </h4>
-                <p><strong>Para que serve:</strong> Consultar, buscar ou corrigir todos os registros de abastecimentos anteriores.</p>
-                <ul class="list-disc list-inside space-y-1 pl-1 text-stone-600 dark:text-slate-300">
-                    <li><strong>Filtros por Combustível:</strong> Clique nos botões (Etanol, Gasolina, Misto) para analisar separadamente a frequência com que você usa cada tipo de combustível.</li>
-                    <li><strong>Barra de Busca:</strong> Digite uma data específica ou um número de quilometragem para achar rapidamente aquele abastecimento antigo.</li>
-                    <li><strong>Edição/Exclusão:</strong> Errou a digitação no posto? Encontre o registro e edite os valores para manter seus dados sempre limpos.</li>
-                </ul>
-            </section>
+        <section aria-label="2. Decisão no Posto" class="space-y-1.5">
+          <h4 class="font-bold text-orange-600 dark:text-orange-400 text-xs uppercase tracking-wider flex items-center gap-1.5">
+            <i class="fa-solid fa-calculator" aria-hidden="true"></i> 2. Decisão no Posto (Etanol vs. Gasolina)
+          </h4>
+          <ul class="list-disc list-inside space-y-1 pl-1">
+            <li><strong>Análise Instantânea:</strong> Calcula automaticamente qual combustível traz a melhor relação de custo-benefício.</li>
+            <li><strong>Fator Dinâmico:</strong> Aprende com o histórico do seu carro. Com o registro de tanques cheios, calcula a razão de rendimento real em vez de um fator fixo (70%).</li>
+          </ul>
+        </section>
 
-            <section aria-label="4. Aba Análise" class="space-y-1.5">
-                <h4 class="font-bold text-orange-600 dark:text-orange-400 text-xs uppercase tracking-wider flex items-center gap-1.5">
-                    <i class="fa-solid fa-chart-line" aria-hidden="true"></i> 4. Aba Análise (Gráficos e Insights)
-                </h4>
-                <p><strong>Para que serve:</strong> Visualizar tendências de consumo ao longo do tempo e identificar desperdícios.</p>
-                <ul class="list-disc list-inside space-y-1 pl-1 text-stone-600 dark:text-slate-300">
-                    <li><strong>Métricas Mensais:</strong> Mostra o volume em litros e o valor gasto nos últimos 30 dias para você controlar a fatura do cartão ou orçamento do mês.</li>
-                    <li><strong>Gráfico de Evolução (km/L):</strong> Identifique se o consumo aumentou subitamente — um indicativo claro de pneu murcho, necessidade de alinhamento ou combustível adulterado.</li>
-                    <li><strong>Gráfico de Distribuição e Insights:</strong> Entenda a proporção de uso de cada combustível e leia as dicas automáticas do sistema para otimizar seus gastos.</li>
-                </ul>
-            </section>
+        <section aria-label="3. Análise e Gráficos" class="space-y-1.5">
+          <h4 class="font-bold text-orange-600 dark:text-orange-400 text-xs uppercase tracking-wider flex items-center gap-1.5">
+            <i class="fa-solid fa-chart-line" aria-hidden="true"></i> 3. Análise e Gráficos
+          </h4>
+          <ul class="list-disc list-inside space-y-1 pl-1">
+            <li>Acompanhe gráficos do histórico de consumo ao longo do tempo e a proporção de uso dos combustíveis.</li>
+            <li>Filtre os cálculos considerando a média geral ou apenas os últimos 5 abastecimentos.</li>
+          </ul>
+        </section>
 
-            <section aria-label="5. Aba Revisão" class="space-y-1.5">
-                <h4 class="font-bold text-orange-600 dark:text-orange-400 text-xs uppercase tracking-wider flex items-center gap-1.5">
-                    <i class="fa-solid fa-wrench" aria-hidden="true"></i> 5. Aba Revisão (Manutenção e Documentos)
-                </h4>
-                <p><strong>Para que serve:</strong> Evitar multas, perdas de garantia e quebras mecânicas por falta de manutenção preventiva.</p>
-                <ul class="list-disc list-inside space-y-1 pl-1 text-stone-600 dark:text-slate-300">
-                    <li><strong>Manutenção Prevista (Troca de Óleo):</strong> O app estima a data aproximada da sua próxima revisão com base na sua média diária de uso. Clique em <em>Configurar</em> para ajustar o intervalo (ex: a cada 10.000 km ou 5.000 km).</li>
-                    <li><strong>Rodízio de Pneus:</strong> Acompanhe a barra de progresso para saber exatamente quando fazer o rodízio e alinhamento, estendendo a vida útil dos pneus.</li>
-                    <li><strong>CNH e Exame Toxicológico:</strong> Cadastre as datas de vencimento e receba alertas destacados no topo do aplicativo antes que seus documentos vençam.</li>
-                </ul>
-            </section>
+        <section aria-label="4. Gestão de Manutenções" class="space-y-1.5">
+          <h4 class="font-bold text-orange-600 dark:text-orange-400 text-xs uppercase tracking-wider flex items-center gap-1.5">
+            <i class="fa-solid fa-wrench" aria-hidden="true"></i> 4. Gestão de Revisões e Alertas
+          </h4>
+          <ul class="list-disc list-inside space-y-1 pl-1">
+            <li><strong>Troca de Óleo / Revisão:</strong> Configure intervalos e acompanhe a estimativa da próxima revisão com base no seu uso diário.</li>
+            <li><strong>Rodízio de Pneus:</strong> Registre a quilometragem do último rodízio para acompanhar o limite estabelecido.</li>
+            <li><strong>CNH e Toxicológico:</strong> Cadastre as datas de vencimento para receber alertas visuais destacados no app.</li>
+          </ul>
+        </section>
 
-            <section aria-label="6. Menu de Configurações" class="space-y-1.5">
-                <h4 class="font-bold text-orange-600 dark:text-orange-400 text-xs uppercase tracking-wider flex items-center gap-1.5">
-                    <i class="fa-solid fa-gear" aria-hidden="true"></i> 6. Opções, Backup e Relatórios
-                </h4>
-                <p><strong>Para que serve:</strong> Gerenciar a interface e proteger seus dados contra perdas.</p>
-                <ul class="list-disc list-inside space-y-1 pl-1 text-stone-600 dark:text-slate-300">
-                    <li><strong>Exportar/Restaurar JSON:</strong> Gere cópias de segurança (backups) e restaure seus dados ao trocar de celular.</li>
-                    <li><strong>Relatórios em Excel:</strong> Exporte planilhas para controle financeiro pessoal ou comprovação em trabalhos com veículos (Uber, entregas, frotas).</li>
-                    <li><strong>Aparência:</strong> Alterne entre o modo Escuro e Claro para facilitar a visualização durante o dia ou à noite.</li>
-                </ul>
-            </section>
-
-            <section aria-label="7. Privacidade e Armazenamento" class="space-y-1.5 border-t border-stone-200 dark:border-slate-800 pt-3">
-                <h4 class="font-bold text-emerald-600 dark:text-emerald-400 text-xs uppercase tracking-wider flex items-center gap-1.5">
-                    <i class="fa-solid fa-shield-halved" aria-hidden="true"></i> 7. Armazenamento e Privacidade
-                </h4>
-                <p>
-                    Seus dados pertencem 100% a você! O aplicativo <strong>não exige login nem senha</strong> e armazena todas as informações localmente no seu dispositivo. Faça exports periódicos em JSON para manter seu backup sempre protegido.
-                </p>
-            </section>
-        </div>
-
+        <section aria-label="5. Dicas e Backup" class="space-y-1.5 border-t border-stone-200 dark:border-slate-800 pt-3">
+          <h4 class="font-bold text-emerald-600 dark:text-emerald-400 text-xs uppercase tracking-wider flex items-center gap-1.5">
+            <i class="fa-solid fa-shield-halved" aria-hidden="true"></i> 5. Armazenamento e Backup
+          </h4>
+          <p>
+            Seus dados pertencem 100% a você e ficam armazenados localmente no dispositivo. Utilize o menu de configurações para exportar e restaurar backups em <strong>JSON</strong> ou <strong>Excel</strong>.
+          </p>
+        </section>
+      </div>
         <div class="pt-2 border-t border-stone-300 dark:border-slate-800">
             <button onclick="FuelTrackerApp.closeManualModal()" class="w-full py-2.5 bg-stone-200 dark:bg-slate-800 hover:bg-stone-300 dark:hover:bg-slate-700 text-stone-900 dark:text-white font-bold rounded-xl transition text-xs focus:outline-none focus:ring-2 focus:ring-emerald-500">
                 Entendi, fechar Manual
